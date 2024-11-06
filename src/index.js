@@ -1,11 +1,21 @@
-function generatePoem(event) {
-  event.preventDefault();
+function displayPoem(response) {
   new Typewriter("#poem", {
-    strings: "Love is Love",
+    strings: response.data.answer,
     autoStart: true,
     delay: 55,
     cursor: "",
   });
+}
+
+function generatePoem(event) {
+  event.preventDefault();
+  let userInput = document.querySelector("#user-instructions");
+  let apiKey = "8590002d4163ob0d0at3864bcd25fb7b";
+  let context =
+    "You are a romantic expert who loves writing poems about african american culture. Your mission is to write a short 4 line poem in basic HTML, do NOT show HTML, and separate each line with a <br />. Follow user instructions. Sign the poem with 'HackerBae Alondra' in a <strong> element at the end of the poem.";
+  let prompt = `User instructions: Generate a poem about ${userInput.value}`;
+  let apiUrl = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${apiKey}`;
+  axios.get(apiUrl).then(displayPoem);
 }
 
 let poemElement = document.querySelector("#poem-generator");
