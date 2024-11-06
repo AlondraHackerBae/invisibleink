@@ -3,7 +3,7 @@ function generatePoem(event) {
   new Typewriter("#poem", {
     strings: "Love is Love",
     autoStart: true,
-    delay: 20,
+    delay: 55,
     cursor: "",
   });
 }
