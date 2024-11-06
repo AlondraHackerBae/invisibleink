@@ -9,33 +9,45 @@
   <body>
     <h1>Welcome to new poem Generator!</h1>
 
-    <main>
-      <form>
-        <input type="text" placeholder="Enter topic of poem..." />
-        <input type="submit" autofocus required autocomplete="off" />
-      </form>
-      <div>
-        The poem will go here...
-        <br />
-        Second line of poem...
-        <br />
-      </div>
-    </main>
+    <div class="container">
+      <main>
+        <form>
+          <input
+            type="text"
+            placeholder="Enter topic of poem..."
+            class="instructions"
+          />
+          <input
+            type="submit"
+            autofocus
+            required
+            autocomplete="off"
+            class="button"
+          />
+        </form>
+        <div class="poem">
+          The poem will go here...
+          <br />
+          Second line of poem...
+          <br />
+        </div>
+      </main>
 
-    <footer>
-      This AI project was coded by
-      <a href="https://github.com/AlondraHackerBae" target="_blank"
-        >Alondra Turner</a
-      >
-      , is opensourced on
-      <a
-        href="https://github.com/AlondraHackerBae?tab=repositories"
-        target="_blank"
-        >GitHub</a
-      >
-      and hosted on
-      <a href="https://bgmpoem.netlify.app/" target="_blank">Netlify</a>.
-    </footer>
+      <footer>
+        This AI project was coded by
+        <a href="https://github.com/AlondraHackerBae" target="_blank"
+          >Alondra Turner</a
+        >
+        , is opensourced on
+        <a
+          href="https://github.com/AlondraHackerBae?tab=repositories"
+          target="_blank"
+          >GitHub</a
+        >
+        and hosted on
+        <a href="https://bgmpoem.netlify.app/" target="_blank">Netlify</a>.
+      </footer>
+    </div>
     <script src="src/index.js"></script>
   </body>
 </html>
