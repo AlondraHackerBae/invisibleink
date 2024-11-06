@@ -9,26 +9,29 @@
     <script src="https://unpkg.com/axios@1.6.7/dist/axios.min.js"></script>
   </head>
   <body>
-    <h1>Welcome to new poem Generator!</h1>
-
     <div class="container">
+      <header><h1>Ai Poem Generator!</h1></header>
+
       <main>
-        <form id="poem-generator">
-          <input
-            type="text"
-            placeholder="Enter topic of poem..."
-            class="instructions"
-            id="user-instructions"
-          />
-          <input
-            type="submit"
-            autofocus
-            required
-            autocomplete="off"
-            class="button"
-          />
-        </form>
-        <div class="poem" id="poem"></div>
+        <div class="form-wrapper">
+          <form id="poem-generator">
+            <input
+              type="text"
+              placeholder="Enter topic of poem..."
+              class="instructions"
+              id="user-instructions"
+            />
+            <input
+              type="submit"
+              autofocus
+              required
+              autocomplete="off"
+              class="button"
+            />
+          </form>
+          <span class="hint">ie: Love, Hair, Dance</span>
+        </div>
+        <div class="poem hidden" id="poem"></div>
       </main>
 
       <footer>
