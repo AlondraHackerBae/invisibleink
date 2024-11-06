@@ -54,6 +54,9 @@ form {
   line-height: 24px;
   padding: 20px;
 }
+.poem strong {
+  color: rgb(61, 39, 39);
+}
 footer {
   font-size: 13px;
   margin-top: 30px;
