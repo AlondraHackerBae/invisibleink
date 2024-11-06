@@ -3,15 +3,16 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Love Poem</title>
     <link rel="stylesheet" href="src/styles.css" />
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
   </head>
   <body>
     <h1>Welcome to new poem Generator!</h1>
 
     <div class="container">
       <main>
-        <form>
+        <form id="poem-generator">
           <input
             type="text"
             placeholder="Enter topic of poem..."
@@ -25,12 +26,7 @@
             class="button"
           />
         </form>
-        <div class="poem">
-          The poem will go here...
-          <br />
-          Second line of poem...
-          <br />
-        </div>
+        <div class="poem" id="poem"></div>
       </main>
 
       <footer>
