@@ -32,7 +32,7 @@ h2 {
   max-width: 600px;
 }
 .form-wrapper {
-  background-color: #0a79f3;
+  background-color: #41ace0;
   border-radius: 10px;
   box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.5);
   margin-bottom: 30px;
@@ -68,7 +68,7 @@ form {
 }
 .script {
   background-color: white;
-  border-left: 3px solid #0a79f3;
+  border-left: 3px solid #41ace0;
   border-radius: 10px;
   box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.5);
   font-size: 14px;
@@ -84,7 +84,7 @@ footer {
   margin-top: 30px;
 }
 a {
-  color: #0a79f3;
+  color: #41ace0;
 }
 .blinking {
   animation: blink-animation 1s steps(5, start) infinite;
