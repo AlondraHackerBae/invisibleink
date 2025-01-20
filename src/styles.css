@@ -102,3 +102,34 @@ a {
     visibility: hidden;
   }
 }
+
+@media (max-width: 900px) {
+    .hero {
+      padding: 90px;
+    }  
+    .hero p {
+      font-size: 10px;
+    }
+  header {
+        padding: 60px 0;
+    }
+    .hero h1 {
+        font-size: 25px;
+    }
+     h2 {
+        font-size: 30px;
+        margin: 0px auto;
+        padding: 0px;
+    }
+    .container {
+  
+      max-width: 350px;
+    }
+    .hint {
+      font-size: 10px;
+    }
+    footer {
+      font-size: 10px;
+      opacity: 70%;
+    }
+  }
