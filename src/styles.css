@@ -101,6 +101,7 @@ a {
 
 @media (max-width: 900px) {
     .hero {
+        background-position: center;
         padding: 90px;
     }  
     .hero h1 {
